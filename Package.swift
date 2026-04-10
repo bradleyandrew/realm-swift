@@ -4,7 +4,7 @@ import PackageDescription
 import Foundation
 
 let coreVersion = Version("14.14.0")
-let cocoaVersion = Version("10.54.6")
+let cocoaVersion = Version("10.54.7")
 
 #if compiler(>=6)
 let swiftVersion = [SwiftVersion.version("6")]
@@ -161,7 +161,7 @@ let package = Package(
             targets: ["RealmSwift"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/realm/realm-core.git", exact: coreVersion)
+        .package(url: "https://github.com/realm/realm-core.git", revision: "d8f21f9b98cae76e8dc235558c2f71ea27997f10")
     ],
     targets: [
       .target(

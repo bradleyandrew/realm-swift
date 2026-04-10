@@ -1,3 +1,16 @@
+10.54.7 Release notes (2026-02-23)
+=============================================================
+
+### Bug Fixes
+
+* Fix compilation with Xcode 26.4 by updating realm-core to include fix for invalid `std::is_pod` specializations in S2 geometry library. ([Core d8f21f9](https://github.com/realm/realm-core/commit/d8f21f9))
+
+### Compatibility
+
+* Realm Studio: 15.0.0 or later.
+* APIs are backwards compatible with all previous releases in the 10.x.y series.
+* Xcode: 16.3.0-26.4.
+
 10.54.6 Release notes (2025-10-15)
 =============================================================
 
