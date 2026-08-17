@@ -1,3 +1,27 @@
+10.54.8 Release notes (2026-08-17)
+=============================================================
+
+### Bug Fixes
+
+* Fix compilation with Xcode 27 by backporting Realm Core's updated S2
+  geometry comparator and related compiler-compatibility fixes.
+* Work around an Xcode 27 compiler bug affecting the SwiftUI `where`
+  properties while preserving their public API.
+* Route Swift object deletion through `RLMRealm` consistently.
+
+### Compatibility
+
+* Realm Studio: 15.0.0 or later.
+* APIs are backwards compatible with all previous releases in the 10.x.y series.
+* Xcode: 16.3-27.
+* When building with Xcode 27, the minimum deployment targets are iOS 15,
+  macOS 12, watchOS 9, and tvOS 15.
+
+### Internal
+
+* Update the custom Realm Core dependency from `xcode-26.4-fix` to
+  `xcode-27-fix`, retaining the Realm Core 14.14 API and file format.
+
 10.54.7 Release notes (2026-02-23)
 =============================================================
 
